@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import ContactForm from '../components/ContactForm'
 
 export default function MegaVPS() {
   return (
@@ -12,6 +13,10 @@ export default function MegaVPS() {
         <section className="grid md:grid-cols-2 gap-6">
           <div className="p-6 bg-slate-800 rounded-xl">High-performance VPS with enterprise SLAs.</div>
           <div className="p-6 bg-slate-800 rounded-xl">Managed services and security-hardened instances.</div>
+        </section>
+        <section className="mt-12 p-6 bg-slate-900 rounded-xl">
+          <h2 className="text-xl font-bold mb-4">Contact MegaVPS</h2>
+          <ContactForm companyId="megavps" />
         </section>
       </div>
     </main>

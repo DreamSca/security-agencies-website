@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import ContactForm from '../components/ContactForm'
 
 export default function Jamila() {
   return (
@@ -12,6 +13,10 @@ export default function Jamila() {
         <section className="grid md:grid-cols-2 gap-6">
           <div className="p-6 bg-slate-800 rounded-xl">Mission: Ensure safety and operational continuity.</div>
           <div className="p-6 bg-slate-800 rounded-xl">Services: Executive Protection, Mobile Patrols, Risk Assessments.</div>
+        </section>
+        <section className="mt-12 p-6 bg-slate-900 rounded-xl">
+          <h2 className="text-xl font-bold mb-4">Contact Jamila</h2>
+          <ContactForm companyId="jamila" />
         </section>
       </div>
     </main>
