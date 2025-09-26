@@ -4,5 +4,26 @@
 
 html, body, #root { height: 100%; }
 
+/* Base font and background adjustments */
+
+:root {
+  --page-bg-from: #071228; /* richer navy */
+  --page-bg-to: #0f2433;   /* teal-slate */
+  --accent: #f6c84c; /* warm gold */
+}
+
+html, body, #root { height: 100%; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body { background: radial-gradient(1200px 600px at 10% 10%, rgba(246,200,76,0.06), transparent 8%), linear-gradient(180deg, var(--page-bg-from), var(--page-bg-to)); color: #e6eef8; }
+
+/* accent utilities */
+.bg-accent { background-color: var(--accent) }
+.text-accent { color: var(--accent) }
+
+.card-portal { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); }
+.card-portal:hover { box-shadow: 0 12px 30px rgba(2,6,23,0.6); }
+
 /* small helper */
 .animate-float { animation: float 6s ease-in-out infinite; }
+
+@keyframes float { 0% { transform: translateY(0) } 50% { transform: translateY(-6px) } 100% { transform: translateY(0) } }

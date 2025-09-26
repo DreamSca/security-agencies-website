@@ -6,9 +6,31 @@
     <title>Security Agencies – Landing</title>
     <meta name="description" content="Professional security services and enterprise protection - Jamila, MegaVPS, VPS." />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   </head>
   <body class="bg-primary text-gray-100">
     <div id="root"></div>
+    <!-- Load reCAPTCHA at runtime using Vite env: VITE_RECAPTCHA_SITE_KEY -->
+    <script type="module">
+      (function(){
+        try {
+          const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY || ''
+          if (siteKey) {
+            window.__RECAPTCHA_SITE_KEY = siteKey
+            const s = document.createElement('script')
+            s.src = 'https://www.google.com/recaptcha/api.js?render=' + encodeURIComponent(siteKey)
+            s.async = true
+            document.head.appendChild(s)
+          }
+        } catch (err) {
+          // import.meta may be unavailable in some contexts; fail gracefully
+          console.warn('Could not read VITE_RECAPTCHA_SITE_KEY', err)
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
