@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = "dist"
-  base = "security-agencies-website"
+  base = "security-portal-website"
 
 [[redirects]]
   from = "/*"
