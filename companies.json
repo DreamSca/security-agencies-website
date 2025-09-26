@@ -1,0 +1,104 @@
+[
+  {
+    "id": "jcs",
+    "name": "Jamila & Company Security Services Inc.",
+    "logo": "/src/assets/logos/jcs-logo.svg",
+    "colors": {
+      "primary": "#c53030",
+      "accent": "#f56565"
+    },
+    "content": {
+      "home": {
+        "heroTitle": "Unwavering Protection, Unmatched Professionalism.",
+        "heroSubtitle": "Jamila & Company delivers premier security solutions tailored to your unique needs, ensuring peace of mind around the clock."
+      },
+      "ourStory": {
+        "mission": "Our mission is to provide the highest level of security services through integrity, professionalism, and a client-first approach.",
+        "vision": "To be the most trusted and respected security provider in the industry, setting new standards for excellence.",
+        "history": "Founded in 2005, JCS has grown from a small team of dedicated professionals to a leading security firm known for its commitment to quality and reliability."
+      },
+      "news": [
+        { "date": "2024-07-15", "title": "JCS Awarded 'Security Firm of the Year'", "body": "We are honored to receive this prestigious award recognizing our commitment to excellence." },
+        { "date": "2024-06-20", "title": "New Training Program Launched", "body": "Our new advanced training program for all security personnel is now live." }
+      ],
+      "faqs": [
+        { "question": "What types of security services do you offer?", "answer": "We offer a comprehensive range of services including on-site guards, mobile patrols, event security, and risk assessment." },
+        { "question": "Are your security guards licensed?", "answer": "Yes, all our security personnel are fully licensed, insured, and undergo rigorous background checks and training." }
+      ],
+      "contact": {
+        "email": "contact@jcs.com",
+        "phone": "(555) 123-4567",
+        "address": "123 Security Blvd, Suite 100, Metropolis, USA",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.214821511478!2d-73.98785368459383!3d40.7588959793268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c64801b9%3A0x254f2d2534c4f94d!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1626312453398!5m2!1sen!2sus"
+      }
+    }
+  },
+  {
+    "id": "megavps",
+    "name": "MegaVps Security Agency",
+    "logo": "/src/assets/logos/megavps-logo.svg",
+    "colors": {
+      "primary": "#2b6cb0",
+      "accent": "#63b3ed"
+    },
+    "content": {
+      "home": {
+        "heroTitle": "Advanced Security for a Digital Age.",
+        "heroSubtitle": "MegaVps Security Agency specializes in integrating technology with elite manpower for robust, modern security."
+      },
+      "ourStory": {
+        "mission": "To protect our clients' assets with cutting-edge technology and highly trained personnel.",
+        "vision": "To lead the evolution of the security industry through innovation and strategic solutions.",
+        "history": "Established in 2010, MegaVps was born from a need for smarter, tech-forward security. We have since become a trusted partner for corporate and private clients."
+      },
+      "news": [
+        { "date": "2024-07-10", "title": "MegaVps Unveils New AI Surveillance System", "body": "Our new AI-powered system enhances threat detection and response times." },
+        { "date": "2024-05-22", "title": "Partnership with TechCorp Announced", "body": "We are excited to partner with TechCorp to provide integrated cybersecurity and physical security services." }
+      ],
+      "faqs": [
+        { "question": "What is 'integrated security'?", "answer": "It's our holistic approach that combines physical guards with advanced technology like AI surveillance, access control, and cybersecurity measures for complete protection." },
+        { "question": "Do you serve residential clients?", "answer": "While our primary focus is on corporate and commercial clients, we do offer specialized high-net-worth residential security packages." }
+      ],
+      "contact": {
+        "email": "info@megavps.com",
+        "phone": "(555) 987-6543",
+        "address": "456 Tech Park, Silicon Valley, USA",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.332533219933!2d-122.086381384695!3d37.42206597982522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba024251be6b%3A0x578c7024735e21fb!2sGoogleplex!5e0!3m2!1sen!2sus!4v1626312544321!5m2!1sen!2sus"
+      }
+    }
+  },
+  {
+    "id": "vps",
+    "name": "VPS Security Services",
+    "logo": "/src/assets/logos/vps-logo.svg",
+    "colors": {
+      "primary": "#2f855a",
+      "accent": "#68d391"
+    },
+    "content": {
+      "home": {
+        "heroTitle": "Vigilance, Protection, Service.",
+        "heroSubtitle": "Your trusted partner in community and commercial security, providing reliable and visible protection."
+      },
+      "ourStory": {
+        "mission": "To foster safe environments for communities and businesses through vigilant and personable security services.",
+        "vision": "To be the most community-focused security provider, known for our reliability and approachable personnel.",
+        "history": "VPS Security Services was founded in 2012 with a simple goal: to provide dependable security that people can trust. We pride ourselves on building strong relationships with our clients."
+      },
+      "news": [
+        { "date": "2024-07-01", "title": "Community Safety Initiative Launched", "body": "We're proud to launch our new initiative to provide free security assessments for local businesses." },
+        { "date": "2024-06-15", "title": "VPS Expands Fleet of Patrol Vehicles", "body": "Our increased fleet allows for faster response times and greater visibility in the communities we serve." }
+      ],
+      "faqs": [
+        { "question": "What makes VPS different?", "answer": "Our focus on community integration and building trust. Our guards are not just security; they are part of the community they protect." },
+        { "question": "What areas do you serve?", "answer": "We currently serve the greater metropolitan area and surrounding suburbs. Please contact us for specific service area inquiries." }
+      ],
+      "contact": {
+        "email": "support@vps-sec.com",
+        "phone": "(555) 246-8135",
+        "address": "789 Community Drive, Suburbia, USA",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.719691688173!2d-118.2436849847846!3d34.05223498060691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c634251ab357%3A0x50132386dd328f66!2sLos%20Angeles%20City%20Hall!5e0!3m2!1sen!2sus!4v1626312603456!5m2!1sen!2sus"
+      }
+    }
+  }
+]
