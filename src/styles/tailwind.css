@@ -5,35 +5,32 @@
 html, body, #root { height: 100%; }
 
 /* Base font and background adjustments */
-
 :root {
-  --page-bg-from: #071228; /* richer navy */
-  --page-bg-to: #0f2433;   /* teal-slate */
-  --accent: #f6c84c; /* warm gold */
+	--page-bg-from: #0b1220; /* deep navy-slate */
+	--page-bg-to: #16202b;   /* softer slate */
+	--accent: #f59e0b; /* warm amber/gold */
+	--muted: #94a3b8;
+	--card-bg: rgba(255,255,255,0.03);
 }
 
-html, body, #root { height: 100%; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-body { background: radial-gradient(1200px 600px at 10% 10%, rgba(246,200,76,0.06), transparent 8%), linear-gradient(180deg, var(--page-bg-from), var(--page-bg-to)); color: #e6eef8; }
+html, body, #root { height: 100%; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
 
-/* accent utilities */
-.bg-accent { background-color: var(--accent) }
-.text-accent { color: var(--accent) }
+body { background: radial-gradient(1200px 600px at 10% 10%, rgba(21,128,61,0.04), transparent), linear-gradient(180deg, var(--page-bg-from), var(--page-bg-to)); color: #e6eef8; }
 
-.card-portal { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); }
-.card-portal:hover { box-shadow: 0 12px 30px rgba(2,6,23,0.6); }
+/* Utility-friendly tokens for Tailwind and components */
+.bg-site { background: linear-gradient(180deg, var(--page-bg-from), var(--page-bg-to)); }
+.text-muted { color: var(--muted) }
+.card { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.04); }
+.btn-accent { background: linear-gradient(90deg, rgba(245,158,11,1), rgba(251,191,36,0.95)); color: #062017; padding: 0.6rem 1.1rem; border-radius: 0.5rem; font-weight: 700 }
+
+/* Responsive hero helpers */
+.hero-container { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: center }
+@media (min-width: 768px) { .hero-container { grid-template-columns: 1fr 480px; gap: 2.5rem } }
+.hero-video { width: 100%; height: 100%; border-radius: 0.75rem; box-shadow: 0 6px 30px rgba(2,6,23,0.6); overflow: hidden }
+
 
 /* small helper */
 .animate-float { animation: float 6s ease-in-out infinite; }
 
 @keyframes float { 0% { transform: translateY(0) } 50% { transform: translateY(-6px) } 100% { transform: translateY(0) } }
-
-/* entrance animations */
-.animate-enter { transform: translateY(18px) scale(0.98); opacity: 0; }
-.animate-enter-visible { transform: translateY(0) scale(1); opacity: 1; transition: transform 600ms cubic-bezier(.16,.84,.3,1), opacity 600ms ease; }
-
-/* subtle hover lift for logos */
-.logo-tilt { transition: transform 300ms cubic-bezier(.22,.9,.28,1); }
-.logo-tilt:hover { transform: translateY(-6px) rotate(-2deg) scale(1.02); }
-.card-portal:hover .logo-tilt { transform: translateY(-6px) rotate(-2deg) scale(1.02); }
-
