@@ -15,9 +15,8 @@ export default function MegaVPS() {
             <p className="text-gray-300 mb-8">Enterprise-level hosting and VPS solutions for critical workloads.</p>
           </div>
           <div className="hidden md:block ml-6">
-            <div ref={el => { /* placeholder for ref usage below */ }} />
             <div className="w-40 h-40 rounded-lg bg-gradient-to-br from-slate-800 to-slate-700 p-3 animate-float shadow-lg" id="megavps-logo">
-              <img src={megavpsLogo} alt="MegaVPS logo" className="w-full h-full object-contain" />
+              <img src={megavpsLogo} alt="MegaVPS logo" className="w-full h-full object-contain logo-tilt" />
             </div>
             <div className="mt-2 text-sm text-gray-400">Enterprise hosting</div>
           </div>
@@ -37,16 +36,14 @@ export default function MegaVPS() {
 }
 
 // GSAP subtle float animation hooked via ID (runs only if gsap is available)
-try {
-  const gsap = require('gsap')
-  if (gsap && typeof window !== 'undefined') {
-    setTimeout(() => {
+useEffect(() => {
+  try {
+    import('gsap').then(mod => {
+      const gsap = (mod && (mod as any).default) || (mod as any)
       const el = document.getElementById('megavps-logo')
-      if (el && gsap.to) {
+      if (el && gsap && typeof gsap.to === 'function') {
         gsap.to(el, { y: -6, repeat: -1, yoyo: true, duration: 2, ease: 'sine.inOut' })
       }
-    }, 500)
-  }
-} catch (err) {
-  // optional - gsap not installed in some environments
-}
+    })
+  } catch (err) { /* ignore */ }
+}, [])

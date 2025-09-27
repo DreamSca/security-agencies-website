@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import ContactForm from '../components/ContactForm'
 import vpsLogo from '../img/vps.png'
@@ -16,7 +16,7 @@ export default function VPS() {
           </div>
           <div className="hidden md:block ml-6">
             <div className="w-40 h-40 rounded-lg bg-gradient-to-br from-slate-800 to-slate-700 p-3 animate-float shadow-lg" id="vps-logo">
-              <img src={vpsLogo} alt="VPS logo" className="w-full h-full object-contain" />
+              <img src={vpsLogo} alt="VPS logo" className="w-full h-full object-contain logo-tilt" />
             </div>
             <div className="mt-2 text-sm text-gray-400">Trusted security</div>
           </div>
@@ -34,3 +34,16 @@ export default function VPS() {
     </div>
   )
 }
+
+    // GSAP subtle float animation hooked via ID (runs only if gsap is available)
+    useEffect(() => {
+      try {
+        import('gsap').then(mod => {
+          const gsap = (mod && (mod as any).default) || (mod as any)
+          const el = document.getElementById('vps-logo')
+          if (el && gsap && typeof gsap.to === 'function') {
+            gsap.to(el, { y: -6, repeat: -1, yoyo: true, duration: 2, ease: 'sine.inOut' })
+          }
+        })
+      } catch (err) { /* ignore */ }
+    }, [])

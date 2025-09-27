@@ -54,12 +54,12 @@ export default function Portal() {
       <Header />
       <main className="min-h-screen flex items-center justify-center">
       <div className="max-w-5xl mx-auto px-6 py-24 text-center">
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-white">Jamila & Companies Security Services Inc.</h1>
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-white">Our Companies</h1>
         <p className="text-gray-300 mb-10 max-w-2xl mx-auto">Choose a trusted partner. Click a logo to explore each company's dedicated page — designed for clarity and quick contact.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          <CompanyCard ref={refs[0]} to="/jamila" title="Jamila and Company Security Services Inc." img={jamilaLogo} />
-          <CompanyCard ref={refs[1]} to="/megavps" title="MegaVPS Security Agency Inc." img={megavpsLogo} />
-          <CompanyCard ref={refs[2]} to="/vps" title="VPS Security Agency Inc." img={vpsLogo} />
+          <CompanyCard ref={refs[0]} to="/jamila" title="Jamila Security" img={jamilaLogo} />
+          <CompanyCard ref={refs[1]} to="/megavps" title="MegaVPS" img={megavpsLogo} />
+          <CompanyCard ref={refs[2]} to="/vps" title="VPS Agency" img={vpsLogo} />
         </div>
       </div>
     </main>

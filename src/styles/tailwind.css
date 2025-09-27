@@ -27,3 +27,13 @@ body { background: radial-gradient(1200px 600px at 10% 10%, rgba(246,200,76,0.06
 .animate-float { animation: float 6s ease-in-out infinite; }
 
 @keyframes float { 0% { transform: translateY(0) } 50% { transform: translateY(-6px) } 100% { transform: translateY(0) } }
+
+/* entrance animations */
+.animate-enter { transform: translateY(18px) scale(0.98); opacity: 0; }
+.animate-enter-visible { transform: translateY(0) scale(1); opacity: 1; transition: transform 600ms cubic-bezier(.16,.84,.3,1), opacity 600ms ease; }
+
+/* subtle hover lift for logos */
+.logo-tilt { transition: transform 300ms cubic-bezier(.22,.9,.28,1); }
+.logo-tilt:hover { transform: translateY(-6px) rotate(-2deg) scale(1.02); }
+.card-portal:hover .logo-tilt { transform: translateY(-6px) rotate(-2deg) scale(1.02); }
+
